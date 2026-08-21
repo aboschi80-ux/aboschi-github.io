@@ -1,0 +1,278 @@
+/* ===== Personalizzazioni Bootstrap ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 60px 0;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+/* Variazioni di colore per diverse sezioni */
+.bg-success.hero {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.bg-info.hero {
+    background: linear-gradient(135deg, #0083B0 0%, #00B4DB 100%);
+}
+
+.bg-warning.hero {
+    background: linear-gradient(135deg, #f76b1a 0%, #fad961 100%);
+}
+
+.bg-secondary.hero {
+    background: linear-gradient(135deg, #5f72bd 0%, #9921e8 100%);
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+    margin-left: 10px;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+.nav-link.active {
+    color: #ffc107 !important;
+}
+
+/* ===== Cards ===== */
+.card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    color: #667eea;
+    font-weight: bold;
+}
+
+/* ===== Images ===== */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* ===== Typography ===== */
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* ===== Lists ===== */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* ===== Footer ===== */
+footer {
+    margin-top: 80px;
+    border-top: 1px solid #ddd;
+    background-color: #2c3e50;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* ===== Timeline ===== */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline .card {
+    margin-left: 20px;
+    border-left: 4px solid #667eea;
+}
+
+/* ===== Main Content Area ===== */
+main {
+    min-height: 60vh;
+}
+
+aside {
+    padding-top: 40px;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #667eea;
+    border-color: #667eea;
+}
+
+.btn-primary:hover {
+    background-color: #5568d3;
+    border-color: #5568d3;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    aside {
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+
+    h1 {
+        border-bottom: 2px solid #667eea;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* ===== Utility Classes ===== */
+.text-muted {
+    color: #6c757d !important;
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+.shadow-sm {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* ===== Links ===== */
+a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5568d3;
+    text-decoration: underline;
+}
+
+main a {
+    font-weight: 500;
+}
+
+/* ===== Sticky Navbar ===== */
+.sticky-top {
+    top: 0;
+    z-index: 1020;
+}
+
+/* ===== General Spacing ===== */
+.my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
