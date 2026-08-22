@@ -3,81 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Progetto Europeo</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Progetto Europeo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">🌍 Progetto Europeo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/chi-siamo.html">Chi Siamo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/cosa-abbiamo-fatto.html">Cosa Abbiamo Fatto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/mappa-interattiva.html">Mappa Interattiva</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/overview.html">Overview</a>
-                    </li>
-                </ul>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-leaf"></i> Progetto Europeo
+            </a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="pages/chi-siamo.html" class="nav-link">Chi Siamo</a>
+                <a href="pages/risultati.html" class="nav-link">Risultati</a>
+                <a href="pages/formazioni.html" class="nav-link">Formazioni</a>
+                <a href="pages/galleria.html" class="nav-link">Galleria</a>
+                <a href="pages/mappa.html" class="nav-link">Mappa</a>
+                <a href="pages/overview.html" class="nav-link">Info</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero bg-primary text-white py-5">
-        <div class="container text-center">
-            <h1>Benvenuti nel Nostro Progetto Europeo</h1>
-            <p class="lead">Scopri i nostri risultati e il nostro lavoro</p>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Progetto Europeo</h1>
+            <p class="hero-subtitle">Un'iniziativa per il cambiamento sostenibile in Europa</p>
+            <a href="#highlights" class="cta-button">Scopri di più</a>
         </div>
     </section>
 
     <!-- Main Content -->
-    <main class="container my-5">
-        <div class="row">
-            <div class="col-md-8">
-                <h2>Home</h2>
-                <p>Questo è il sito del nostro progetto europeo. Usa il menu per navigare le diverse sezioni e scoprire tutto quello che abbiamo realizzato.</p>
-                <img src="images/prova.jpg" alt="Immagine prova" class="img-fluid rounded mt-3">
-                <p class="mt-3">Il progetto rappresenta un'importante iniziativa a livello europeo che ha coinvolto partner da diversi paesi con l'obiettivo di...</p>
-            </div>
-            <aside class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Info Rapide</h5>
-                        <p class="card-text">Scopri i dettagli principali del progetto nel nostro sito.</p>
-                        <ul class="list-unstyled">
-                            <li>📍 Ambito europeo</li>
-                            <li>🎯 Obiettivi specifici</li>
-                            <li>👥 Team internazionale</li>
-                        </ul>
+    <main class="container">
+        <section class="highlights" id="highlights">
+            <h2>Il Nostro Impatto</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-globe"></i>
                     </div>
+                    <h3>Ambito Europeo</h3>
+                    <p>Partner da diversi paesi europei lavorano insieme per raggiungere obiettivi comuni e duraturi</p>
                 </div>
-            </aside>
-        </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Risultati Misurabili</h3>
+                    <p>Monitoriamo costantemente i progressi con metriche precise e impatto verificabile</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Team Internazionale</h3>
+                    <p>Esperti da diversi campi e paesi collaborano per l'eccellenza e l'innovazione</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-preview">
+            <div class="about-content">
+                <h2>Chi Siamo</h2>
+                <p>Il nostro progetto riunisce istituzioni e organizzazioni leader da tutta Europa, dedicate a promuovere innovazione, sostenibilità e sviluppo locale. Con una visione comune, lavoriamo per creare un impatto duraturo sulle comunità europee.</p>
+                <img src="images/home/prova.jpg" alt="Immagine del progetto" class="about-image">
+                <a href="pages/chi-siamo.html" class="link-button">Leggi di più →</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <h2>Contatti</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h4 style="color: #2c3e50; margin-bottom: 10px;">Email</h4>
+                    <p>
+                        <a href="mailto:info@progetto.it">info@progetto.it</a>
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-instagram"></i>
+                    <h4 style="color: #2c3e50; margin-bottom: 10px;">Instagram</h4>
+                    <p>
+                        <a href="https://instagram.com/tuo-progetto" target="_blank">@tuo-progetto</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram CTA -->
+        <section class="instagram-cta">
+            <h3>Seguici su Instagram</h3>
+            <p>Scopri gli ultimi aggiornamenti, foto degli eventi e novità dal nostro progetto</p>
+            <a href="https://instagram.com/tuo-progetto" target="_blank" class="instagram-button">
+                <i class="fab fa-instagram"></i> Segui @tuo-progetto
+            </a>
+        </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4 mt-5">
-        <p>&copy; 2024 Progetto Europeo. Tutti i diritti riservati.</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Progetto Europeo. Tutti i diritti riservati.</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://instagram.com/tuo-progetto" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:info@progetto.it" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Termini</a>
+                <a href="#">Contatti</a>
+            </div>
+        </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="js/script.js"></script>
 </body>
 </html>
